@@ -11,7 +11,7 @@ parameters:
     level: 2
 
     paths:
-        - src
+        - frontend/src
 
     scanFiles:
         - vendor/yiisoft/yii2/Yii.php
