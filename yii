@@ -1,0 +1,28 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+use Yiisoft\Config\Config;
+use Yiisoft\Config\ConfigPaths;
+use Yiisoft\Config\Modifier\RecursiveMerge;
+
+if (getenv('YII_ENV')) {
+    defined('YII_ENV') || define('YII_ENV', getenv('YII_ENV'));
+} else {
+    defined('YII_ENV') || define('YII_ENV', 'dev');
+}
+
+require __DIR__ . '/vendor/autoload.php';
+require __DIR__ . '/vendor/yiisoft/yii2/Yii.php';
+
+$config = new Config(
+    new ConfigPaths(__DIR__, 'config', 'vendor'),
+    modifiers: [RecursiveMerge::groups('console', 'params-console')],
+    paramsGroup: 'params-console',
+);
+
+$application = new yii\console\Application($config->get('console'));
+$exitCode = $application->run();
+
+exit($exitCode);
