@@ -18,7 +18,7 @@ return [
     'aliases' => [
         '@app' => $rootDir,
         '@bower' => '@app/node_modules',
-        '@npm'   => '@app/node_modules',
+        '@npm' => '@app/node_modules',
         '@public' => '@app/frontend/public',
         '@resource' => '@app/frontend/src/Framework/resource',
         '@runtime' => '@public/runtime',
@@ -58,7 +58,7 @@ return [
         ],
         'urlManager' => [
             'enablePrettyUrl' => $params['frontend.urlManager.enablePrettyUrl'],
-            'showScriptName' =>  $params['frontend.urlManager.showScriptName'],
+            'showScriptName' => $params['frontend.urlManager.showScriptName'],
         ],
     ],
     'container' => [

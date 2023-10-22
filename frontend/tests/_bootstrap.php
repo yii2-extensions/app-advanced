@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 define('YII_ENV', 'tests');
-defined('YII_DEBUG') or define('YII_DEBUG', true);
+defined('YII_DEBUG') || define('YII_DEBUG', true);
 
 $rootDir = dirname(__DIR__, 2);
 

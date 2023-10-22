@@ -7,12 +7,12 @@ return [
         'frontend' => [
             '$yii2-debug',
             '$yii2-gii',
-            'frontend/*.php'
+            'frontend/*.php',
         ],
         'params' => 'params.php',
         'params-frontend' => [
             '$params',
-            'params-frontend.php'
+            'params-frontend.php',
         ],
     ],
     'config-plugin-options' => [

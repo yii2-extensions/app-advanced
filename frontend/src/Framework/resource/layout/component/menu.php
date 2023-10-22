@@ -20,11 +20,11 @@ NavBar::begin(
                 'width' => '200',
             ],
         ),
-        'brandUrl'   => Yii::$app->homeUrl,
+        'brandUrl' => Yii::$app->homeUrl,
         'collapseOptions' => [
             'class' => 'justify-content-end',
         ],
-        'options'    => [
+        'options' => [
             'class' => 'navbar navbar bg-body-secondary navbar-expand-lg',
         ],
     ]
@@ -33,7 +33,7 @@ NavBar::begin(
 echo Nav::widget(
     [
         'options' => ['class' => 'navbar-nav'],
-        'items'   => $menuItems,
+        'items' => $menuItems,
     ]
 );
 

@@ -9,12 +9,12 @@ use Yiisoft\Config\Modifier\RecursiveMerge;
 $rootDir = dirname(__DIR__, 2);
 
 // comment out the following two lines when deployed to production
-defined('YII_DEBUG') or define('YII_DEBUG', true);
+defined('YII_DEBUG') || define('YII_DEBUG', true);
 
 if (getenv('YII_ENV')) {
-    defined('YII_ENV') or define('YII_ENV', getenv('YII_ENV'));
+    defined('YII_ENV') || define('YII_ENV', getenv('YII_ENV'));
 } else {
-    defined('YII_ENV') or define('YII_ENV', 'dev');
+    defined('YII_ENV') || define('YII_ENV', 'dev');
 }
 
 if (getenv('YII_C3')) {
