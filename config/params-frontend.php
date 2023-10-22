@@ -14,7 +14,7 @@ return [
         '@bower' => '@app/node_modules',
         '@npm' => '@app/node_modules',
         '@public' => '@app/frontend/public',
-        '@resource' => '@app/frontend/src/Framework/resource',
+        '@resource' => '@app/common/src/Framework/resource',
         '@runtime' => '@public/runtime',
     ],
     'frontend.assetManager.basePath' => '@public/assets',

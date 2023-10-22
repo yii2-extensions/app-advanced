@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use FrontEnd\Framework\Asset\AppAsset;
+use Common\Framework\Asset\AppAsset;
 use sjaakp\icon\Icon;
 use yii\bootstrap5\Breadcrumbs;
 use yii\bootstrap5\Html;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace FrontEnd\Framework\Asset;
+namespace Common\Framework\Asset;
 
 use yii\bootstrap5\BootstrapAsset;
 use yii\web\AssetBundle;

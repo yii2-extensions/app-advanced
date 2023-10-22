@@ -12,7 +12,6 @@ return [
         '@app' => $rootDir,
         '@bower' => '@vendor/bower-asset',
         '@npm' => '@vendor/npm-asset',
-        '@resource' => '@app/src/Framework/resource',
         '@tests' => '@app/tests',
     ],
     'console.id' => 'console.basic',

@@ -19,7 +19,7 @@ return [
         '@bower' => '@app/node_modules',
         '@npm' => '@app/node_modules',
         '@public' => '@app/backend/public',
-        '@resource' => '@app/backend/src/Framework/resource',
+        '@resource' => '@app/common/src/Framework/resource',
         '@runtime' => '@public/runtime',
     ],
     'basePath' => $rootDir,
