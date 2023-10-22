@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace FrontEnd\UseCase\Hello;
+namespace Console\UseCase\Hello;
 
 use yii\console\Controller;
 use yii\console\ExitCode;

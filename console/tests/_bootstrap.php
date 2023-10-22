@@ -7,7 +7,7 @@ defined('YII_DEBUG') || define('YII_DEBUG', true);
 if (getenv('YII_ENV')) {
     defined('YII_ENV') || define('YII_ENV', getenv('YII_ENV'));
 } else {
-    defined('YII_ENV') || define('YII_ENV', 'dev');
+    defined('YII_ENV') || define('YII_ENV', 'tests');
 }
 
 $rootDir = dirname(__DIR__, 2);

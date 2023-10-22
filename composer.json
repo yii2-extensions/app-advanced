@@ -38,14 +38,17 @@
     },
     "autoload": {
         "psr-4": {
-            "BackEnd\\": "backend",
-            "Common\\": "common",
-            "Console\\": "console",
+            "BackEnd\\": "backend/src",
+            "Common\\": "common/src",
+            "Console\\": "console/src",
             "FrontEnd\\": "frontend/src"
         }
     },
     "autoload-dev": {
         "psr-4": {
+            "BackEnd\\Tests\\": "tests",
+            "Common\\Tests\\": "tests",
+            "Console\\Tests\\": "tests",
             "FrontEnd\\Tests\\": "tests"
         }
     },

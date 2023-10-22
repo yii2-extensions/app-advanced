@@ -1,4 +1,4 @@
-namespace: FrontEnd\Tests
+namespace: Console\Tests
 bootstrap: _bootstrap.php
 support_namespace: Support
 paths:
@@ -14,7 +14,7 @@ settings:
 modules:
   config:
     Yii2:
-      configFile: 'config/frontend-tests.php'
+      configFile: 'config/console-tests.php'
 extensions:
   enabled:
     - Codeception\Extension\RunFailed

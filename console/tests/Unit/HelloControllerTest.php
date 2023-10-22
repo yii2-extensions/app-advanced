@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Unit;
+namespace Console\Tests\Unit;
 
 use Codeception\Test\Unit;
-use FrontEnd\UseCase\Hello\HelloController;
+use Console\UseCase\Hello\HelloController;
 use Yii;
 
 use function ob_get_clean;
