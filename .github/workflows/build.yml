@@ -23,7 +23,7 @@ name: build
 
 jobs:
   phpunit:
-    uses: yiisoft/actions/.github/workflows/phpunit.yml@master
+    uses: php-forge/actions/.github/workflows/codeception.yml@main
     with:
       os: >-
         ['ubuntu-latest', 'windows-latest']
