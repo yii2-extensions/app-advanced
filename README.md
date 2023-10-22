@@ -35,15 +35,15 @@
 ```text
 root
 ├── config  
-│   ├── backend                Backend configuration.            
-│   ├── console                Console configuration.
-│   ├── frontend               Frontend configuration.
-│   ├── config-plugin.php      Plugin configuration.
-│   ├── messages.php           Translation configuration.
-│   ├── params-backend.php     Backend parameters.
-│   ├── params-console.php     Console parameters.
-│   ├── params-frontend.php    Frontend parameters.
-│   └── params.php             Common parameters.
+│   ├── backend                 Backend configuration.            
+│   ├── console                 Console configuration.
+│   ├── frontend                Frontend configuration.
+│   ├── config-plugin.php       Plugin configuration.
+│   ├── messages.php            Translation configuration.
+│   ├── params-backend.php      Backend parameters.
+│   ├── params-console.php      Console parameters.
+│   ├── params-frontend.php     Frontend parameters.
+│   └── params.php              Common parameters.
 ├── backend             
 │   ├── config                  Backend tests configuration.
 │   ├── public                  Backend web server public.
@@ -57,10 +57,10 @@ root
 │           └── Asset           Common asset bundles files.    
 │           └── Controller      Common controller files.
 │           └── resource         
-│               ├── css         Css files.
-│               ├── js          Js files.
-│               ├── layout      Layout files.
-│               └── message     Translation files.
+│               ├── css         Common Css files.
+│               ├── js          Common Js files.
+│               ├── layout      Common Layout files.
+│               └── message     Common Translation files.
 ├── console             
 │   ├── config                  Console tests configuration.
 │   └── src                     
