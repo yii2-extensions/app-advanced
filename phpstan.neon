@@ -8,9 +8,12 @@ parameters:
         - YII_ENV_PROD
         - YII_ENV_TEST
 
-    level: 2
+    level: 5
 
     paths:
+        - backend/src
+        - common/src
+        - console/src
         - frontend/src
 
     scanFiles:
