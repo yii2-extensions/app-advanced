@@ -25,7 +25,7 @@ final class ContactEventHandler implements BootstrapInterface
                 Yii::$app->session->setFlash(
                     'success',
                     Yii::t(
-                        'frontend.avanced',
+                        'frontend.advanced',
                         'Thank you for contacting us. We will respond to you as soon as possible.'
                     )
                 );

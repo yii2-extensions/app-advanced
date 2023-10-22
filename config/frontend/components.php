@@ -22,7 +22,7 @@ return [
         ],
         'i18n' => [
             'translations' => [
-                'frontend.avanced' => [
+                'frontend.advanced' => [
                     'class' => PhpMessageSource::class,
                 ],
             ],
