@@ -47,21 +47,20 @@ root
 ├── backend             
 │   ├── config                  Backend tests configuration.
 │   ├── public                  Backend web server public.
-│   └── src                     
-│       ├── Framework           
-│       │   ├── Asset           Asset bundle files.
-│       │   └── resource         
-│       │       ├── css         Css files.
-│       │       ├── js          Js files.
-│       │       ├── layout      Layout files.
-│       │       └── message     Translation files.
-│       ├── UseCase
-│       │   └── Site            Site use case.
-│       └── Tests               Backend tests.
+│   ├── src                     
+│   │   └── UseCase
+│   │       └── Site            Site use case.
+│   └── Tests                   Backend tests.
 ├── common             
 │   └── src                     
 │       └── Framework           
+│           └── Asset           Common asset bundles files.    
 │           └── Controller      Common controller files.
+│           └── resource         
+│               ├── css         Css files.
+│               ├── js          Js files.
+│               ├── layout      Layout files.
+│               └── message     Translation files.
 ├── console             
 │   ├── config                  Console tests configuration.
 │   └── src                     
@@ -73,13 +72,7 @@ root
 │   ├── public                  Frontend web server public.
 │   └── src                     
 │       ├── Framework           
-│       │   ├── Asset           Asset bundle files.
 │       │   ├── EventHandler    Event handler files.
-│       │   └── resource         
-│       │       ├── css         Css files.
-│       │       ├── js          Js files.
-│       │       ├── layout      Layout files.
-│       │       └── message     Translation files.
 │       ├── UseCase
 │       │   ├── About           About use case.
 │       │   ├── Contact         Contact use case.
