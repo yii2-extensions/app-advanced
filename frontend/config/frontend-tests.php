@@ -2,24 +2,27 @@
 
 declare(strict_types=1);
 
-use App\Framework\EventHandler\ContactEventHandler;
+use FrontEnd\Framework\EventHandler\ContactEventHandler;
 use yii\i18n\PhpMessageSource;
 use yii\log\FileTarget;
 use yii\symfonymailer\Mailer;
 use yii\web\Session;
 
+$rootDir = dirname(__DIR__, 2);
 $params = array_merge(
-    require __DIR__ . '/params.php',
-    require __DIR__ . '/params-web.php',
-);
-$rootDir = dirname(__DIR__);
-$aliases = array_merge(
-    $params['app.aliases'],
-    ['@app' => $rootDir],
+    require "$rootDir/config/params.php",
+    require "$rootDir/config/params-frontend.php",
 );
 
 return [
-    'aliases' => $aliases,
+    'aliases' => [
+        '@app' => $rootDir,
+        '@bower' => '@app/node_modules',
+        '@npm'   => '@app/node_modules',
+        '@public' => '@app/frontend/public',
+        '@resource' => '@app/frontend/src/Framework/resource',
+        '@runtime' => '@public/runtime',
+    ],
     'basePath' => $rootDir,
     'bootstrap' => [
         ContactEventHandler::class,
@@ -27,14 +30,14 @@ return [
     ],
     'components' => [
         'assetManager' => [
-            'basePath' => $params['app.assetManager.basePath'],
+            'basePath' => $params['frontend.assetManager.basePath'],
         ],
         'errorHandler' => [
-            'errorAction' => $params['app.errorHandler.errorAction'],
+            'errorAction' => $params['frontend.errorHandler.errorAction'],
         ],
         'i18n' => [
             'translations' => [
-                'app.basic' => [
+                'frontend.avanced' => [
                     'class' => PhpMessageSource::class,
                 ],
             ],
@@ -50,18 +53,18 @@ return [
             ],
         ],
         'request' => [
-            'cookieValidationKey' => $params['app.request.cookieValidationKey'],
-            'enableCsrfValidation' => $params['app.request.enableCsrfValidation'],
+            'cookieValidationKey' => $params['frontend.request.cookieValidationKey'],
+            'enableCsrfValidation' => $params['frontend.request.enableCsrfValidation'],
         ],
         'urlManager' => [
-            'enablePrettyUrl' => $params['app.urlManager.enablePrettyUrl'],
-            'showScriptName' =>  $params['app.urlManager.showScriptName'],
+            'enablePrettyUrl' => $params['frontend.urlManager.enablePrettyUrl'],
+            'showScriptName' =>  $params['frontend.urlManager.showScriptName'],
         ],
     ],
     'container' => [
         'definitions' => [
             Mailer::class => [
-                'useFileTransport' => $params['app.mailer.useFileTransport'],
+                'useFileTransport' => $params['frontend.mailer.useFileTransport'],
             ],
         ],
         'singletons' => [
@@ -70,10 +73,10 @@ return [
             },
         ],
     ],
-    'controllerMap' => $params['app.controllerMap'] ?? [],
-    'id' => 'basic-tests',
+    'controllerMap' => $params['frontend.controllerMap'] ?? [],
+    'id' => 'frontend',
     'language' => 'en-US',
     'name' => 'My Project Basic',
-    'params' => $params['app.params'] ?? [],
-    'runtimePath' => "$rootDir/public/runtime",
+    'params' => $params['frontend.params'] ?? [],
+    'runtimePath' => "$rootDir/frontend/public/runtime",
 ];

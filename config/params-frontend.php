@@ -14,7 +14,6 @@ return [
         '@bower' => '@app/node_modules',
         '@npm'   => '@app/node_modules',
         '@public' => '@app/frontend/public',
-        '@web' => '@public',
         '@resource' => '@app/frontend/src/Framework/resource',
         '@runtime' => '@public/runtime',
     ],
@@ -32,7 +31,7 @@ return [
     ],
     'frontend.errorHandler.errorAction' => 'site/404',
     'frontend.mailer.useFileTransport' => true,
-    'frontend.name' => 'Frontend Application',
+    'frontend.name' => 'Frontend Web Application',
     'frontend.id' => 'frontend',
     'frontend.params' => [
         'frontend.mailer.sender' => 'noreply@example.com',
@@ -58,6 +57,6 @@ return [
     'frontend.urlManager.showScriptName' => false,
 
     // yii2 extensions settings
-    'yii.debug' => false,
+    'yii.debug' => true,
     'yii.gii' => false,
 ];

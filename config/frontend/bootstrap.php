@@ -6,6 +6,6 @@ use FrontEnd\Framework\EventHandler\ContactEventHandler;
 
 return [
     'bootstrap' => [
-        ContactEventHandler::class,
+        ContactEventHandler::class
     ],
 ];

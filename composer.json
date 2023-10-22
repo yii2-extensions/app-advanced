@@ -22,8 +22,18 @@
         "yiisoft/yii2-symfonymailer": "^3.0"
     },
     "require-dev": {
+        "codeception/c3": "^2.8",
+        "codeception/codeception": "^5.0.0",
+        "codeception/lib-innerbrowser": "^4.0",
+        "codeception/module-asserts": "^3.0",
+        "codeception/module-filesystem": "^3.0",
+        "codeception/module-yii2": "^1.1",
+        "codeception/verify": "^3.0",
         "maglnet/composer-require-checker": "^4.6",
-        "phpunit/phpunit": "^10.2",
+        "symfony/browser-kit": "^6.3",
+        "symfony/process": "^6.3",
+        "yii2-extensions/debug": "dev-main",
+        "yii2-extensions/gii": "dev-main",
         "yii2-extensions/phpstan": "dev-main"
     },
     "autoload": {
@@ -58,7 +68,8 @@
             "yiisoft/yii2-composer": true,
             "composer/installers": true,
             "oomphinc/composer-installers-extender": true,
-            "yiisoft/config": true
+            "yiisoft/config": true,
+            "codeception/c3": true
         }
     },
     "scripts": {
