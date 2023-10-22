@@ -2,6 +2,6 @@
 include:
     - frontend
 paths:
-    output: console/runtime/output
+    output: runtime
 settings:
     colors: true

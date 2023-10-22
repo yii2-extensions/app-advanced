@@ -26,7 +26,7 @@ jobs:
     uses: php-forge/actions/.github/workflows/codeception.yml@main
     with:
       extensions: gd, intl
-      file-codecoverage: frontend/tests/_output/coverage.xml
+      file-codecoverage: runtime/coverage.xml
       os: >-
         ['ubuntu-latest', 'windows-latest']
       php: >-
