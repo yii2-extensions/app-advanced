@@ -16,7 +16,7 @@ use yii\web\View;
  * @var Session $session
  * @var View $this
  */
-$this->title = $this->title = Yii::t('frontend.avanced', 'Contact');
+$this->title = $this->title = Yii::t('frontend.advanced', 'Contact');
 ?>
 <?= Html::beginTag('div', ['class' => 'container mt-3']) ?>
     <?= Html::beginTag('div', ['class' => 'row align-items-center justify-content-center']) ?>
@@ -28,7 +28,7 @@ $this->title = $this->title = Yii::t('frontend.avanced', 'Contact');
                 <?= Html::tag('h1', '<b>' . Html::encode($this->title) . '</b>', ['class' => 'contact-form-title']) ?>
                 <?= Html::beginTag('p', ['class' => 'contact-form-subtitle']) ?>
                     <?= Yii::t(
-                        'frontend.avanced',
+                        'frontend.advanced',
                         'Please fill out the following fields to Sign up.'
                     ) ?>
                 <?= Html::endTag('p') ?>
@@ -56,8 +56,8 @@ $this->title = $this->title = Yii::t('frontend.avanced', 'Contact');
                             [
                                 'autofocus' => true,
                                 'oninput' => 'this.setCustomValidity("")',
-                                'oninvalid' => 'this.setCustomValidity("' . Yii::t('frontend.avanced', 'Enter Username Here') .'")',
-                                'placeholder' => Yii::t('frontend.avanced', 'Username'),
+                                'oninvalid' => 'this.setCustomValidity("' . Yii::t('frontend.advanced', 'Enter Username Here') .'")',
+                                'placeholder' => Yii::t('frontend.advanced', 'Username'),
                                 'required' => !((YII_ENV === 'test')),
                                 'tabindex' => '1',
                             ]
@@ -67,8 +67,8 @@ $this->title = $this->title = Yii::t('frontend.avanced', 'Contact');
                         ->textInput(
                             [
                                 'oninput' => 'this.setCustomValidity("")',
-                                'oninvalid' => 'this.setCustomValidity("' . Yii::t('frontend.avanced', 'Enter Email Here') . '")',
-                                'placeholder' => Yii::t('frontend.avanced', 'Email'),
+                                'oninvalid' => 'this.setCustomValidity("' . Yii::t('frontend.advanced', 'Enter Email Here') . '")',
+                                'placeholder' => Yii::t('frontend.advanced', 'Email'),
                                 'required' => !((YII_ENV === 'tests')),
                                 'tabindex' => '2',
                             ]
@@ -78,8 +78,8 @@ $this->title = $this->title = Yii::t('frontend.avanced', 'Contact');
                         ->textInput(
                             [
                                 'oninput' => 'this.setCustomValidity("")',
-                                'oninvalid' => 'this.setCustomValidity("' . Yii::t('frontend.avanced', 'Enter Subject Here').'")',
-                                'placeholder' => Yii::t('frontend.avanced', 'Subject'),
+                                'oninvalid' => 'this.setCustomValidity("' . Yii::t('frontend.advanced', 'Enter Subject Here').'")',
+                                'placeholder' => Yii::t('frontend.advanced', 'Subject'),
                                 'required' => !((YII_ENV === 'test')),
                                 'tabindex' => '3',
                             ]
@@ -89,8 +89,8 @@ $this->title = $this->title = Yii::t('frontend.avanced', 'Contact');
                         ->textarea(
                             [
                                 'oninput' => 'this.setCustomValidity("")',
-                                'oninvalid' => 'this.setCustomValidity("' . Yii::t('frontend.avanced', 'Enter Body Here') . '")',
-                                'placeholder' => Yii::t('frontend.avanced', 'Body'),
+                                'oninvalid' => 'this.setCustomValidity("' . Yii::t('frontend.advanced', 'Enter Body Here') . '")',
+                                'placeholder' => Yii::t('frontend.advanced', 'Body'),
                                 'required' => !((YII_ENV === 'test')),
                                 'style' => 'height: 100px',
                                 'tabindex' => '4',
@@ -102,12 +102,12 @@ $this->title = $this->title = Yii::t('frontend.avanced', 'Contact');
                             Captcha::class,
                             [
                                 'captchaAction' => 'contact/captcha',
-                                'template' => '{input}<div class="text-center">' . '<b>' . Yii::t('frontend.avanced', 'Captcha Code') . ': ' . '</b>' . '{image}</div>',
+                                'template' => '{input}<div class="text-center">' . '<b>' . Yii::t('frontend.advanced', 'Captcha Code') . ': ' . '</b>' . '{image}</div>',
                                 'options' => [
                                     'class' => 'form-control',
                                     'oninput' => 'this.setCustomValidity("")',
-                                    'oninvalid' => 'this.setCustomValidity("' . Yii::t('frontend.avanced', 'Enter Captcha Code Here') . '")',
-                                    'placeholder' => Yii::t('frontend.avanced', 'Captcha Code'),
+                                    'oninvalid' => 'this.setCustomValidity("' . Yii::t('frontend.advanced', 'Enter Captcha Code Here') . '")',
+                                    'placeholder' => Yii::t('frontend.advanced', 'Captcha Code'),
                                     'required' => !((YII_ENV === 'test')),
                                     'style' => 'margin-bottom:10px',
                                     'tabindex' => '5',
@@ -117,13 +117,13 @@ $this->title = $this->title = Yii::t('frontend.avanced', 'Contact');
                     ?>
                     <?= Html::beginTag('div', ['class' => 'd-grid gap-2']) ?>
                         <?= Html::submitButton(
-                                Yii::t('frontend.avanced', 'Contact us'),
+                                Yii::t('frontend.advanced', 'Contact us'),
                                 ['class' => 'btn btn-lg btn-primary btn-block', 'name' => 'contact-button', 'tabindex' => '6']
                         ) ?>
                     <?= Html::endTag('div') ?>
                     <?= Html::beginTag('p', ['class' => 'text-center mt-5']) ?>
                         <?= Yii::t(
-                            'frontend.avanced',
+                            'frontend.advanced',
                             'If you have business inquiries or other questions,<br/> please fill out the following form to contact us.<br/> <b>Thank you</b>.'
                         ) ?>
                     <?= Html::endTag('p') ?>
@@ -132,14 +132,14 @@ $this->title = $this->title = Yii::t('frontend.avanced', 'Contact');
                     <?= Html::tag('hr') ?>
                     <?= Html::beginTag('p', ['class' => 'text-center']) ?>
                         <?= Yii::t(
-                            'frontend.avanced',
+                            'frontend.advanced',
                             'Note that if you turn on the Yii debugger, you should be able to view the mail message on the mail panel of the debugger.'
                         ) ?>
                         <br/>
                         <br/>
                         <?php if ($mailer->useFileTransport) : ?>
                             <?= Yii::t(
-                                'frontend.avanced',
+                                'frontend.advanced',
                                 'Because the application is in development mode, the email is not sent but saved as a file under.'
                             ) ?>
                             <br/>
@@ -147,7 +147,7 @@ $this->title = $this->title = Yii::t('frontend.avanced', 'Contact');
                             <br/>
                             <br/>
                             <?= Yii::t(
-                                'frontend.avanced',
+                                'frontend.advanced',
                                 'Please configure the <code>useFileTransport </code>property of the <code>mail </code>application component to be false to enable email sending.'
                             ) ?>
                         <?php endif ?>

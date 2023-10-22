@@ -23,11 +23,11 @@ final class ContactForm extends Model
     public function attributeLabels(): array
     {
         return [
-            'name' => Yii::t('frontend.avanced', 'Name'),
-            'email' => Yii::t('frontend.avanced', 'Email'),
-            'subject' => Yii::t('frontend.avanced', 'Subject'),
-            'body' => Yii::t('frontend.avanced', 'Body'),
-            'verifyCode' => Yii::t('frontend.avanced', 'Captcha Code'),
+            'name' => Yii::t('frontend.advanced', 'Name'),
+            'email' => Yii::t('frontend.advanced', 'Email'),
+            'subject' => Yii::t('frontend.advanced', 'Subject'),
+            'body' => Yii::t('frontend.advanced', 'Body'),
+            'verifyCode' => Yii::t('frontend.advanced', 'Captcha Code'),
         ];
     }
 

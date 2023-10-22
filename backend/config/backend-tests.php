@@ -35,7 +35,7 @@ return [
         ],
         'i18n' => [
             'translations' => [
-                'backend.avanced' => [
+                'backend.advanced' => [
                     'class' => PhpMessageSource::class,
                 ],
             ],

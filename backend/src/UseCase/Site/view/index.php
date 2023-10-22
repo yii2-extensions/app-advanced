@@ -8,7 +8,7 @@ use yii\web\View;
 /**
  * @var View $this
  */
-$this->title = Yii::t('backend.avanced', 'Index');
+$this->title = Yii::t('backend.advanced', 'Index');
 ?>
 <?= Html::beginTag('div', ['class' => 'jumbotron jumbotron-fluid text-center']) ?>
     <?= Html::beginTag('h1', ['class' => 'display-2']) ?>

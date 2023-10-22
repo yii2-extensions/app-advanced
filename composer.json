@@ -46,10 +46,9 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "BackEnd\\Tests\\": "tests",
-            "Common\\Tests\\": "tests",
-            "Console\\Tests\\": "tests",
-            "FrontEnd\\Tests\\": "tests"
+            "BackEnd\\Tests\\": "backend/tests",
+            "Console\\Tests\\": "console/tests",
+            "FrontEnd\\Tests\\": "frontend/tests"
         }
     },
     "extra": {
