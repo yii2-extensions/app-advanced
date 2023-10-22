@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace FrontEnd\UseCase;
+namespace Common\Framework\Controller;
 
 use yii\filters\VerbFilter;
 use yii\web\ErrorAction;

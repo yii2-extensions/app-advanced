@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace FrontEnd\Tests\Acceptance;
+namespace BackEnd\Tests\Acceptance;
 
-use FrontEnd\Tests\Support\AcceptanceTester;
+use BackEnd\Tests\Support\AcceptanceTester;
 
 final class SiteCest
 {
@@ -15,7 +15,7 @@ final class SiteCest
 
         $I->wantTo('ensure that Home page works.');
         $I->expectTo('see page index.');
-        $I->see('Front End Web Application');
+        $I->see('Back End Web Application');
         $I->see('Yii v.2.2');
     }
 }

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace FrontEnd\UseCase\Site;
+namespace BackEnd\UseCase\Site;
 
 use Common\Framework\Controller\Controller;
 use yii\web\ErrorAction;

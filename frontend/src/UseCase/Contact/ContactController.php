@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace FrontEnd\UseCase\Contact;
 
-use FrontEnd\UseCase\Controller;
+use Common\Framework\Controller\Controller;
 use yii\base\Module;
 use yii\captcha\CaptchaAction;
 use yii\symfonymailer\Mailer;

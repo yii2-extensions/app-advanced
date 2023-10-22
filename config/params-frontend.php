@@ -35,7 +35,7 @@ return [
     'frontend.id' => 'frontend',
     'frontend.params' => [
         'frontend.mailer.sender' => 'noreply@example.com',
-        'frontend.mailer.sender.name' => 'Web application basic',
+        'frontend.mailer.sender.name' => 'Frontend Web Application',
         'frontend.menu.isguest' => [
             [
                 'label' => Yii::t('app.basic', 'About'),

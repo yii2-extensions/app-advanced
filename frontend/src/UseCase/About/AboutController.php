@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace FrontEnd\UseCase\About;
 
-use FrontEnd\UseCase\Controller;
+use Common\Framework\Controller\Controller;
 
 final class AboutController extends Controller
 {

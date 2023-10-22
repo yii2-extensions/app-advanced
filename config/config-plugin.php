@@ -4,6 +4,11 @@ declare(strict_types=1);
 
 return [
     'config-plugin' => [
+        'backend' => [
+            '$yii2-debug',
+            '$yii2-gii',
+            'backend/*.php',
+        ],
         'console' => [
             'console/*.php',
         ],
@@ -13,6 +18,10 @@ return [
             'frontend/*.php',
         ],
         'params' => 'params.php',
+        'params-backend' => [
+            '$params',
+            'params-backend.php',
+        ],
         'params-console' => [
             '$params',
             'params-console.php',
