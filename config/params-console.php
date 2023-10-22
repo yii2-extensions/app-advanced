@@ -11,7 +11,7 @@ return [
     'console.aliases' => [
         '@app' => $rootDir,
         '@bower' => '@vendor/bower-asset',
-        '@npm'   => '@vendor/npm-asset',
+        '@npm' => '@vendor/npm-asset',
         '@resource' => '@app/src/Framework/resource',
         '@tests' => '@app/tests',
     ],
