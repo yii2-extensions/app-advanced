@@ -30,6 +30,16 @@
     </a>    
 </p>
 
+</br>
+
+![app-avanced-frontend](docs/home-frontend.png)
+
+</br>
+
+![app-avanced-backend](docs/home-backend.png)
+
+</br>
+
 ## Directory structure
 
 ```text
@@ -95,13 +105,39 @@ composer create-project --prefer-dist --stability=dev yii2-extensions/app-advanc
 ```
 
 <p align="justify">
-Now you should be able to access the application through the following URL, assuming `public` is the directory
+Now you should be able to access the application advanced through the following URL, assuming `frontend/public` amd `backend/public` is the directory
 directly under the Web root.
 </p>
 
-## Testing
+__*Virtual Host:*__
 
-[Check the documentation testing](/docs/testing.md) to learn about testing.
+```
+http://localhost:8080/
+```
+
+__*Server Yii:*__
+
+```shell
+./yii serve -t backend/public -r backend/public/index.php
+./yii serve -t frontend/public -r frontend/public/index.php
+```
+
+__Console commands:__
+
+```shell
+./yii hellow/index
+```
+
+## Tests
+
+~~~
+// download all composer dependencies root project
+$ composer update --prefer-dist -vvv
+
+// run all tests with code coverage
+$ vendor/bin/codecept run --coverage-xml
+~~~
+
 
 ## Our social networks
 
