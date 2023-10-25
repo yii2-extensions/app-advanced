@@ -9,13 +9,14 @@ use FrontEnd\UseCase\Site\SiteController;
 $rootDir = dirname(__DIR__);
 
 return [
-    'frontend.aliases' => [
+    'common.aliases' => [
         '@app' => $rootDir,
         '@bower' => '@app/node_modules',
         '@npm' => '@app/node_modules',
         '@public' => '@app/frontend/public',
         '@resource' => '@app/common/src/Framework/resource',
         '@runtime' => '@public/runtime',
+        '@common' => '@app/common/src/Framework/resource',
     ],
     'frontend.assetManager.basePath' => '@public/assets',
     'frontend.controllerMap' => [

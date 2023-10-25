@@ -7,7 +7,7 @@ use BackEnd\UseCase\Site\SiteController;
 $rootDir = dirname(__DIR__);
 
 return [
-    'backend.aliases' => [
+    'common.aliases' => [
         '@app' => $rootDir,
         '@bower' => '@app/node_modules',
         '@npm' => '@app/node_modules',
