@@ -15,8 +15,14 @@ return [
                 'config/modules.php',
             ],
         ],
+        'common' => [
+            '/' => [
+                'common/*.php',
+            ],
+        ],
         'backend' => [
             '/' => [
+                '$common',
                 '$yii2-debug',
                 '$yii2-gii',
                 'backend/*.php',
@@ -29,6 +35,7 @@ return [
         ],
         'frontend' => [
             '/' => [
+                '$common',
                 '$yii2-debug',
                 '$yii2-gii',
                 'frontend/*.php',

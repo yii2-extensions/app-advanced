@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 return [
     'config-plugin' => [
+        'common' => 'common/*.php',
         'backend' => [
+            '$common',
             '$yii2-debug',
             '$yii2-gii',
             'backend/*.php',
@@ -13,6 +15,7 @@ return [
             'console/*.php',
         ],
         'frontend' => [
+            '$common',
             '$yii2-debug',
             '$yii2-gii',
             'frontend/*.php',

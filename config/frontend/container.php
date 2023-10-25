@@ -12,7 +12,7 @@ return [
     'container' => [
         'definitions' => [
             Mailer::class => [
-                'useFileTransport' => $params['frontend.mailer.useFileTransport'],
+                'useFileTransport' => $params['common.mailer.useFileTransport'],
             ],
         ],
         'singletons' => [

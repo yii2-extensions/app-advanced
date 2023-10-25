@@ -17,7 +17,7 @@ if (isset($params['yii.gii']) && $params['yii.gii'] === true) {
 
 return [
     'id' => $params['frontend.id'],
-    'aliases' => $params['frontend.aliases'],
+    'aliases' => $params['common.aliases'],
     'basePath' => $params['frontend.root.dir'],
     'bootstrap' => $bootstrap,
     'controllerMap' => $params['frontend.controllerMap'] ?? [],
