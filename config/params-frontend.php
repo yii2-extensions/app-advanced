@@ -58,6 +58,6 @@ return [
     'frontend.urlManager.showScriptName' => false,
 
     // yii2 extensions settings
-    'yii.debug' => true,
-    'yii.gii' => false,
+    'yii2.debug' => true,
+    'yii2.gii' => false,
 ];
