@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Common\Framework\Asset;
 
-use yii\bootstrap5\BootstrapAsset;
+use Yii2\Asset\BootstrapAsset;
 use yii\web\AssetBundle;
 use yii\web\View;
 use yii\web\YiiAsset;
@@ -29,7 +29,7 @@ final class AppAsset extends AssetBundle
     ];
 
     public $depends = [
-        YiiAsset::class,
         BootstrapAsset::class,
+        YiiAsset::class,
     ];
 }
