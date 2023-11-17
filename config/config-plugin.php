@@ -4,11 +4,14 @@ declare(strict_types=1);
 
 return [
     'config-plugin' => [
-        'common' => 'common/*.php',
-        'backend' => [
-            '$common',
+        'common' => [
+            '$yii2-bootstrap5',
             '$yii2-debug',
             '$yii2-gii',
+            'common/*.php',
+        ],
+        'backend' => [
+            '$common',
             'backend/*.php',
         ],
         'console' => [
@@ -16,8 +19,6 @@ return [
         ],
         'frontend' => [
             '$common',
-            '$yii2-debug',
-            '$yii2-gii',
             'frontend/*.php',
         ],
         'params' => 'params.php',
@@ -35,6 +36,11 @@ return [
         ],
     ],
     'config-plugin-options' => [
+        'package-types' => [
+            'composer-plugin',
+            'library',
+            'yii2-extension',
+        ],
         'source-directory' => 'config',
     ],
 ];

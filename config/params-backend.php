@@ -16,6 +16,7 @@ return [
         '@runtime' => '@public/runtime',
     ],
     'backend.assetManager.basePath' => '@public/assets',
+    'backend.bootstrap' => [],
     'backend.controllerMap' => [
         'site' => [
             'class' => SiteController::class,
