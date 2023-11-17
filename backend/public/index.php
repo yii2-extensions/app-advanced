@@ -30,7 +30,7 @@ require_once "$rootDir/vendor/yiisoft/yii2/Yii.php";
 
 $config = new Config(
     new ConfigPaths($rootDir, 'config', 'vendor'),
-    modifiers: [RecursiveMerge::groups('backend', 'params-backend')],
+    modifiers: [RecursiveMerge::groups('backend', 'common', 'params-backend')],
     paramsGroup: 'params-backend',
 );
 
