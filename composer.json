@@ -16,6 +16,7 @@
         "npm-asset/fortawesome--fontawesome-free": "^6.4",
         "oomphinc/composer-installers-extender": "^2.0",
         "sjaakp/yii2-icon": "^1.0",
+        "yii2-extensions/asset-bootstrap5": "dev-main",
         "yii2-extensions/bootstrap5": "dev-main",
         "yiisoft/config": "^1.4",
         "yiisoft/yii2": "^2.2",
