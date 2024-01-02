@@ -16,7 +16,6 @@ return [
         '@public' => '@app/frontend/public',
         '@resource' => '@app/common/src/Framework/resource',
         '@runtime' => '@public/runtime',
-        '@common' => '@app/common/src/Framework/resource',
     ],
     'frontend.assetManager.basePath' => '@public/assets',
     'frontend.controllerMap' => [
